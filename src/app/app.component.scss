@@ -1,0 +1,17 @@
+.box {
+  padding: 20px;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+
+  &-elements {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+  }
+}

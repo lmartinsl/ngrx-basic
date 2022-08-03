@@ -1,0 +1,19 @@
+<div class="container">
+  <div class="container-person">
+    <h3>{{ person.name }}</h3>
+  </div>
+  <div class="container-details">
+    <div>
+      Age: {{ person.age }} - Address: {{ person.address }} - City:
+      {{ person.city }} - Country:{{ person.country }}
+    </div>
+  </div>
+  <div class="container-buttons">
+    <button mat-button color="accent" (click)="update.emit(person)">
+      <mat-icon>update</mat-icon>Change
+    </button>
+    <button mat-button color="warn" (click)="delete.emit(person)">
+      <mat-icon>delete</mat-icon>Remove
+    </button>
+  </div>
+</div>

@@ -1,0 +1,17 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &-person {
+    width: 250px;
+    max-width: 250px;
+  }
+  &-details {
+    max-width: 50%;
+  }
+  &-buttons {
+    display: flex;
+    justify-content: flex-end;
+  }
+}

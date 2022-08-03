@@ -1,0 +1,9 @@
+https://v8.ngrx.io/guide/store/install
+
+npm install @ngrx/store --save or ng add @ngrx/store
+npm install --save-dev @ngrx/store-devtools or ng add @ngrx/store-devtools
+
+StoreModule.forRoot(appReducers),
+StoreDevtoolsModule.instrument({
+  maxAge: 25
+})

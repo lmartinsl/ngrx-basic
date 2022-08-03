@@ -1,0 +1,15 @@
+<div class="box">
+  <div class="box-elements">
+    <app-person
+      *ngFor="let p of people$ | async"
+      [person]="p"
+      (update)="update($event)"
+      (delete)="delete($event)"
+    >
+    </app-person>
+  </div>
+
+  <div class="box-button">
+    <button mat-fab color="primary" (click)="addNew()">New</button>
+  </div>
+</div>
