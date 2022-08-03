@@ -2,8 +2,19 @@ https://v8.ngrx.io/guide/store/install
 
 npm install @ngrx/store --save or ng add @ngrx/store
 npm install --save-dev @ngrx/store-devtools or ng add @ngrx/store-devtools
+npm install @ngrx/entity --save or ng add @ngrx/entity
 
 StoreModule.forRoot(appReducers),
 StoreDevtoolsModule.instrument({
   maxAge: 25
 })
+
+----------------------------------
+
+Dispatch    = Responsável por enviar a ação de uma modificação
+              baseada no state da Store
+Action      = (Classe) Refere-se a intenção de uma ação
+Reducer     = (Função) Recebe uma a ação e, baseada no state,
+              cria um novo estado na store
+Select      = Responsável por captura partes dos estados dentro da store
+Entity      = Ajuda com as modificações de estado passados pelo reducer

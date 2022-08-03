@@ -1,16 +1,17 @@
 import { ActionReducerMap, createSelector } from '@ngrx/store';
-import { Person } from './../interfaces/person.interface';
 import * as fromPersonReducer from './person.reducer';
 
 export interface AppState {
-  people: Person[]
+  people: fromPersonReducer.PeopleState
 }
 
 export const appReducers: ActionReducerMap<AppState> = {
   people: fromPersonReducer.reducer
 }
 
-export const selectPeople = (state: AppState) => state.people
+// export const selectPeople = (state: AppState) => {
+//   return state.people
+// }
 
 // export const selectPeopleCount = createSelector(
 //   selectPeople,
